@@ -10,8 +10,8 @@ func _ready():
 	await get_tree().create_timer(1).timeout
 	var scene: PackedScene = preload("res://scenes/Card.tscn")
 	
-	var rank = "Q"
-	var suit = "H"
+	var rank = "J"
+	var suit = "S"
 	
 	for i in range(5):	
 		var instance = scene.instantiate()

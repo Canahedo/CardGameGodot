@@ -1,10 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://rql0bw5l0oip"]
+[gd_scene load_steps=4 format=3 uid="uid://rql0bw5l0oip"]
 
 [ext_resource type="Script" path="res://scripts/Main.gd" id="1_aobfm"]
 [ext_resource type="Script" path="res://scripts/Deck.gd" id="2_6trq1"]
+[ext_resource type="Script" path="res://scripts/Card.gd" id="3_24hd0"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_aobfm")
 
 [node name="Deck" type="Node2D" parent="."]
 script = ExtResource("2_6trq1")
+
+[node name="Node2D" type="Node2D" parent="Deck"]
+script = ExtResource("3_24hd0")
