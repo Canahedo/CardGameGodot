@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://rql0bw5l0oip"]
+
+[ext_resource type="Script" path="res://scenes/main.gd" id="1_aobfm"]
+[ext_resource type="PackedScene" uid="uid://bwr6fro6qc72m" path="res://scenes/card.tscn" id="1_iacly"]
+[ext_resource type="Texture2D" uid="uid://d3c5noafc3ieg" path="res://assets/card_game_backgroud.png" id="2_b3llm"]
+
+[node name="main" type="Node2D"]
+script = ExtResource("1_aobfm")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+visible = false
+offset_right = 1280.0
+offset_bottom = 720.0
+texture = ExtResource("2_b3llm")
+
+[node name="Card" parent="." instance=ExtResource("1_iacly")]
