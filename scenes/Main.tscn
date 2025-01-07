@@ -1,10 +1,12 @@
 [gd_scene load_steps=3 format=3 uid="uid://rql0bw5l0oip"]
 
 [ext_resource type="Script" path="res://scripts/Main.gd" id="1_aobfm"]
-[ext_resource type="Script" path="res://scripts/Deck.gd" id="2_6trq1"]
+[ext_resource type="Texture2D" uid="uid://dwr52bhcw0cph" path="res://assets/CuteCards - asset pack/CuteCards.png" id="2_yrmph"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_aobfm")
 
-[node name="Deck" type="Node2D" parent="."]
-script = ExtResource("2_6trq1")
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_yrmph")
+centered = false
+region_enabled = true
